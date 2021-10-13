@@ -1,0 +1,14 @@
+<h1> Our Favorites</h1>
+<h2> Rebecca</h2>
+<ol>
+<%@movies_rr.each do |key, value| %>
+<li> <%= link_to key, value  %> </li>
+<% end %>
+</ol>
+
+<h2> Ato </h2>
+<ol>
+<%@movies_2.each do |key, value| %>
+<li> <%= link_to key, value  %> </li>
+<% end %>
+</ol>
