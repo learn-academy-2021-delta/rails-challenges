@@ -1,0 +1,2 @@
+class KevinController < ApplicationController
+end
