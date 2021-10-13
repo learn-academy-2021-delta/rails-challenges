@@ -1,0 +1,2 @@
+class SahtraController < ApplicationController
+end

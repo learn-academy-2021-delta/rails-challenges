@@ -1,0 +1,2 @@
+module SahtraHelper
+end
