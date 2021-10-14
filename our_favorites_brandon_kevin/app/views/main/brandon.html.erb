@@ -1,11 +1,15 @@
 <h1>Brandon Ho</h1>
 <p> top 3 activities </p>
 
-<ul>
-<% @favorites2.each do |value|%>
-    <li> <%= value %> </li> 
-<% end %> 
-</ul> 
+<ol>
+<%= link_to "Listen to music", "/music" %>
+</ol>
+<ol>
+<%= link_to "Sleeping", "/sleep" %>
+</ol>
+<ol>
+<%= link_to "Travel", "/travel1" %>   
+</ol>
 
 <br>
 <%= link_to "Main", "/" %>
