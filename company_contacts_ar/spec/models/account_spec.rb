@@ -5,12 +5,13 @@ RSpec.describe Account, type: :model do
   it 'is not valid without a username' do
     user1 = Account.create(password:"beepboop", email:"robo5569@gmail.com")
     expect(user1.errors[:username]).to_not be_empty
+    #testing to see if an error is returned
   end
 
-  # it 'username needs to be atleast 5 chars long' do
-  #   user1 = Account.create(username:"rob", password:"beepboop", email:"robo5569@gmail.com")
-  #   expect(user1.username.length).to be >= 5
-  # end
+  it 'username needs to be atleast 5 chars long' do
+    user1 = Account.create(username:"rob", password:"beepboop", email:"robo5569@gmail.com")
+    expect(user1.errors[:username]).to_not be_empty
+  end
   
   # password tests:
   it 'is not valid without a password' do
