@@ -1,0 +1,13 @@
+<h1>Charlean</h1>
+<%= @charlean %>
+<h2>Favorite Restaurants</h2>
+<ul>
+
+<% @restaurant_char.each do |value|%>
+    <li> <%= link_to value, "/restaurants" %></li>
+<% end %>
+
+</ul>
+<br>
+
+<%= link_to "Home", "/" %>

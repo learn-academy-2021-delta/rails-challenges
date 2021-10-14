@@ -1,0 +1,2 @@
+module CharleanHelper
+end

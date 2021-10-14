@@ -1,0 +1,2 @@
+class AshleyController < ApplicationController
+end
