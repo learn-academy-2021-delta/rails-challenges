@@ -8,3 +8,4 @@ class MainController < ApplicationController
         render 'cubed.html.erb'
     end
 end
+
