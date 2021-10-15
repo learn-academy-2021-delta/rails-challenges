@@ -1,0 +1,14 @@
+<h1>Wanna edit a blog post? Do so here! </h1>
+<%= form_with model: @blog, local: true, method: :patch do |form| %>
+  <%= form.label :title %>
+  <br />
+  <%= form.text_field :title %>
+  <br />
+  <%= form.label :content %>
+    <br />
+  <%= form.text_field :content %>
+    <br />
+  <%= form.submit "Update Blog" %>
+<% end %>
+
+<p> <%= link_to "home", blogs_path%> </p>
