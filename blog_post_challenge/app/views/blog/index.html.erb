@@ -1,0 +1,12 @@
+<h1>Welcome to Lil'Char Good Living Blog</h1>
+<h2>Pick a category</h2>
+<h2>
+<ul>
+    <% @all_info.each do |blog| %>
+        <li> 
+            <%= link_to blog.title, category_path(blog) %> </li>
+    <% end %>
+</ul>
+</h2>
+<br/>
+<p><%= link_to 'Please add blog category', new_category_path %></p>
