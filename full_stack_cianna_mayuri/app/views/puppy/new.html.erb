@@ -1,0 +1,24 @@
+<h3> Add a New Puppy </h3>
+<%= form_with model:@puppy, local:true do |form|%>
+    <%= form.label:title %>
+    <%= form.text_field :title %>
+
+    <br />
+    <br />
+  <%= form.label :type_of_food %>
+  <%= form.text_field :type_of_food %>
+
+  <br />
+    <br />
+  <%= form.label :excercise_needs %>
+  <%= form.text_field :excercise_needs %>
+
+  <br />
+    <br />
+  <%= form.label :cuteness_level %>
+  <%= form.text_field :cuteness_level %>
+
+  <br />
+    <br />
+  <%= form.submit "Add Puppy" %>
+<% end %>

@@ -1,0 +1,11 @@
+<h3>Cianna&&Mayuri Puppies</h3>
+<ul>
+  <% @puppies.each do |puppy| %>
+    <li><%= link_to puppy.title, puppy_path(puppy) %></li>
+  <% end %>
+</ul
+
+<br />
+<p><%= link_to "Add New Puppy", new_puppy_path %></p>
+
+
