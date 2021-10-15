@@ -1,0 +1,15 @@
+<h1>adding blog post</h1>
+<%= form_with model:@blog, local: true do |form| %>
+
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  
+    <br>
+    <%= form.label :content %>
+    <%= form.text_field :content%>
+  
+    <br>
+    <%= form.submit 'add blog post' %>
+  <% end %>
+  <br>
+  <p><%=link_to 'back to our blog', blogs_path%></p>
