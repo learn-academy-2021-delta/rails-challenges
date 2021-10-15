@@ -1,0 +1,12 @@
+<body style="background: pink;">
+
+<h1>Welcome to our Animal Blog!</h1>
+<% @blogs.each do | blog |%>
+
+<li> <%= link_to blog.title, blog_path(blog)%> </li>
+<% end%>
+
+<br />
+<p> <%= link_to "Add Blog", new_blog_path%> </p>
+
+</body>
