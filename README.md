@@ -28,6 +28,7 @@ Use these command if this is the first time you have worked in the Rails app loc
 - $ `bundle`
 - $ `yarn`
 - $ `rails db:create`
+- $ `rails db:migrate`
 
 
 ### Cloning a Repository
